@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> KŐ - PAPÍR - OLLÓ </title>
+    <link rel="stylesheet" href="ko_papir_ollo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <script src="ko_papir_ollo.js"></script>
+</head>
+
+<body>
+    <div class="counters">
+        <p id="won"> NYERT: 0</p>
+        <p id="draw"> DÖNTETLEN: 0</p>
+        <p id="lost"> VESZTETT: 0</p>
+    </div>
+
+    <div>
+        <h1 id="informationLabel"> VÁLASSZ EGY KEZET ÉS KEZDŐDHET A JÁTÉK! </h1>
+    </div>
+
+    <div class="container">
+        <div onclick="gameFunction(0)" class="imgTile">
+            <img id="rock" src="ko.webp" alt="rock">
+        </div>
+        <div onclick="gameFunction(1)" class="imgTile">
+            <img id="paper" src="papir.webp" alt="paper">
+        </div>
+        <div onclick="gameFunction(2)" class="imgTile">
+            <img id="scissors" src="ollo.webp" alt="scissors">
+        </div>
+    </div>
+
+    <div id="buttonContainer" class="hidden" onclick="hideFunction()">
+        <button type="button"> ÚJ JÁTÉK </button>
+    </div>
+
+    <div class="container">
+        <div class="hidden" id="resultContainer">
+            <img id="result" src="" alt="result">
+        </div>
+    </div>
+
+</body>
+
+</html>
